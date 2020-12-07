@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ivy-module [
+        <!ENTITY spring.version "4.1.3.RELEASE">
+        <!ENTITY log4j.version "2.8.1">
+        ]>
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+    <info organisation="com.tango" module="streammanager" revision="1.0"/>
+
+</ivy-module>

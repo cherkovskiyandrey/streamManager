@@ -1,0 +1,10 @@
+serverConfigs:
+  env:
+  - name: JAVA_OPTS
+    value: -Xmx1024m
+
+  args:
+    - $(JAVA_OPTS)
+    - -verbose
+    - -jar
+    - streammanager.jar

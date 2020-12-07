@@ -1,0 +1,31 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "{{user `repository`}}/${project.parent.artifactId}:${project.parent.version}",
+      "commit": "true",
+      "pull": "true",
+      "message": "{{user `description`}}",
+      "changes": []
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "../../../build/libs",
+      "destination": "/tmp/tango"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "cp -v /tmp/tango/streamManager*.jar /opt/streammanager.jar"
+      ]
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "rm -Rf /tmp/*"
+      ]
+    }
+  ]
+}

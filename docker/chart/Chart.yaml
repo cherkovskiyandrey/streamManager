@@ -1,0 +1,4 @@
+apiVersion: v1
+description: "${project.description}"
+name: "${project.artifactId}"
+version: "${project.version}"

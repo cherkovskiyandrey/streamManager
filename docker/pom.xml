@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <packaging>pom</packaging>
+  <parent>
+    <groupId>helm.charts</groupId>
+    <artifactId>jdk8-corretto</artifactId>
+    <version>RELEASE</version>
+  </parent>
+  <artifactId>streammanager</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <description>streammanager Helm chart</description>
+  <repositories>
+    <repository>
+      <id>tango-release</id>
+      <name>tango-release</name>
+      <url>http://artifacts.tango.corp/artifactory/tango-release/</url>
+    </repository>
+  </repositories>
+</project>

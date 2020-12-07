@@ -1,0 +1,13 @@
+<project name="streamManager" basedir=".">
+  <import file="../../ant/build.docker.pom.xml" />
+
+  <property name="docker.create" value="true" />
+  <property name="docker.dir" value="${basedir}/docker" />
+
+  <target name="build">
+    <exec dir="${basedir}" executable="bash" failonerror="true" failifexecutionfails="true">
+      <arg line="gradlew --no-daemon build -x test" />
+    </exec>
+  </target>
+  <target name="package" depends="build,create-docker" />
+</project>
